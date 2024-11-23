@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import React from "react";
 import { Box } from "@mui/material";
 import { VegaLite } from "react-vega";
-import spec from "/src/test.json";
+import viz from "/src/viz.json";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         justifyContent: "center",
       }}
     >
-      <VegaLite spec={spec} />
+      <VegaLite spec={viz} />
     </Box>
   );
 }
